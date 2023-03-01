@@ -1,10 +1,8 @@
-package elementstests;
-
 import org.gfljavacourses.tests.BaseTests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ButtonsTests extends BaseTests {
+public class ButtonsTest extends BaseTests {
 
     @Test
     public void testClickButtons() {

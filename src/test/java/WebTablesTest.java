@@ -1,10 +1,8 @@
-package elementstests;
-
 import org.gfljavacourses.tests.BaseTests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class WebTablesTests extends BaseTests {
+public class WebTablesTest extends BaseTests {
     @Test
     public void webTablesTest(){
         homePage.chooseHomePageMenu("Elements");
