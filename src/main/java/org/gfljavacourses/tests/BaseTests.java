@@ -37,7 +37,7 @@ public class BaseTests {
 
     @BeforeMethod
     public void setup() {
-        driver = DriverFactory.getDriver(Browser.CHROMEWINDOWS);
+        driver = DriverFactory.getDriver(Browser.CHROMEMAC);
         driver.navigate().to(URL);
 
         driver.manage().window().maximize();

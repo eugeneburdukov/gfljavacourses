@@ -19,8 +19,8 @@ public class DriverFactory {
                 break;
             case CHROMEWINDOWS:
                 file = new File(DRIVER_PATH + "chromedriver.exe");
-                System.setProperty("webdriver.edge.driver", file.getAbsolutePath());
-                driver = new EdgeDriver();
+                System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+                driver = new ChromeDriver();
                 break;
             default:
         }
