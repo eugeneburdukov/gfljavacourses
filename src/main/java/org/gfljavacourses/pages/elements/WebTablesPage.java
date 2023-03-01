@@ -1,12 +1,12 @@
 package org.gfljavacourses.pages.elements;
 
-import org.gfljavacourses.methods.Methods;
+import org.gfljavacourses.methods.CustomMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class WebTablesPage extends Methods {
+public class WebTablesPage extends CustomMethods {
 
     By add = By.id("addNewRecordButton");
     By registrationForm = By.id("registration-form-modal");

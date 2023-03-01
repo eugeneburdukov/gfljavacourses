@@ -1,13 +1,13 @@
 package org.gfljavacourses.pages.elements;
 
-import org.gfljavacourses.methods.Methods;
-import org.gfljavacourses.staticvariables.StaticVariables;
+import org.gfljavacourses.methods.CustomMethods;
+import org.gfljavacourses.staticvariables.CustomStaticVariables;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ButtonsPage extends Methods {
+public class ButtonsPage extends CustomMethods {
 
     By ad = By.id("close-fixedban");
     By clickElementsItems = By.xpath("//*[contains(@class,\"collapse show\")]/ul/li");
@@ -51,7 +51,7 @@ public class ButtonsPage extends Methods {
     }
 
     public void chooseElementsMenu(String elementsMenuList) {
-        int i = arrayListToInt(StaticVariables.ELEMENTS_MENU, elementsMenuList);
+        int i = arrayListToInt(CustomStaticVariables.ELEMENTS_MENU, elementsMenuList);
         javaExecutorScrollIntoView(clickElementsItems);
         clickActionsWithIndex(clickElementsItems, i);
     }

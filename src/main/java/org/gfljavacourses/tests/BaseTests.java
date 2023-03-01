@@ -1,7 +1,7 @@
 package org.gfljavacourses.tests;
 
 import org.gfljavacourses.HomePage;
-import org.gfljavacourses.methods.Methods;
+import org.gfljavacourses.methods.CustomMethods;
 import org.gfljavacourses.pages.elements.ButtonsPage;
 import org.gfljavacourses.pages.elements.WebTablesPage;
 import org.gfljavacourses.utils.Browser;
@@ -25,7 +25,7 @@ public class BaseTests {
     public ButtonsPage buttonsPage;
 
     public WebTablesPage webTablesPage;
-    public Methods methods;
+    public CustomMethods methods;
     Actions actions;
 
     public void waitTime() {
@@ -47,7 +47,7 @@ public class BaseTests {
         homePage = new HomePage(driver, wait, actions);
         buttonsPage = new ButtonsPage(driver, wait, actions);
         webTablesPage = new WebTablesPage(driver, wait, actions);
-        methods = new Methods(driver, wait, actions);
+        methods = new CustomMethods(driver, wait, actions);
         buttonsPage.clickXAd();
         waitTime();
     }

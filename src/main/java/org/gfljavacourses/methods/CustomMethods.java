@@ -10,13 +10,13 @@ import org.openqa.selenium.*;
 
 import java.util.List;
 
-public class Methods {
+public class CustomMethods {
     WebDriver driver;
     WebDriverWait wait;
     Actions actions;
     By title = By.className("main-header");
 
-    public Methods(WebDriver driver, WebDriverWait wait, Actions actions) {
+    public CustomMethods(WebDriver driver, WebDriverWait wait, Actions actions) {
         this.driver = driver;
         this.wait = wait;
         this.actions = actions;
