@@ -1,6 +1,11 @@
+import io.qameta.allure.Allure;
 import org.gfljavacourses.tests.BaseTests;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.io.ByteArrayInputStream;
 
 public class WebTablesTest extends BaseTests {
     @Test
@@ -19,5 +24,7 @@ public class WebTablesTest extends BaseTests {
         webTablesPage.enterDepartment("Project Manager");
         webTablesPage.clickSubmit();
         waitTime();
+        Allure.addAttachment("Screenshot from grid - chrome", new ByteArrayInputStream(((TakesScreenshot) driver)
+                .getScreenshotAs(OutputType.BYTES)));
     }
 }
