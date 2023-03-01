@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Evgeniy Suite">
-    <test name="Test1">
+    <test name="Testing Buttons">
         <classes>
             <class name="ButtonsTest"/>
         </classes>
     </test>
-    <test name="Test2">
+    <test name="Testing Web tables">
         <classes>
             <class name="WebTablesTest"/>
         </classes>
