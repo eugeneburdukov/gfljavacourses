@@ -6,10 +6,9 @@
             <class name="ButtonsTest"/>
         </classes>
     </test>
-    <test name="Test2" parallel="methods" thread-count="3">
+    <test name="Test2">
         <classes>
             <class name="WebTablesTest"/>
-            <class name="ButtonsTest"/>
         </classes>
     </test>
 </suite>
