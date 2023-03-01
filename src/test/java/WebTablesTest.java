@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import java.io.ByteArrayInputStream;
 
 public class WebTablesTest extends BaseTests {
-    @Test
+    @Test (testName = "Testing tables")
     public void webTablesTest() {
         homePage.chooseHomePageMenu("Elements");
         buttonsPage.chooseElementsMenu("Web Tables");

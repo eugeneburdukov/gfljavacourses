@@ -9,7 +9,7 @@ import java.io.ByteArrayInputStream;
 
 public class ButtonsTest extends BaseTests {
 
-    @Test
+    @Test (testName = "Testing clicking buttons")
     public void testClickButtons() {
         homePage.chooseHomePageMenu("Elements");
         buttonsPage.chooseElementsMenu("Buttons");
