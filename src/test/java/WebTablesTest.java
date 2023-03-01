@@ -9,13 +9,13 @@ import java.io.ByteArrayInputStream;
 
 public class WebTablesTest extends BaseTests {
     @Test
-    public void webTablesTest(){
+    public void webTablesTest() {
         homePage.chooseHomePageMenu("Elements");
         buttonsPage.chooseElementsMenu("Web Tables");
-        Assert.assertEquals(methods.getTitleName(),"Web Tables");
+        Assert.assertEquals(methods.getTitleName(), "Web Tables");
         webTablesPage.clickAddButton();
         waitTime();
-        Assert.assertEquals(webTablesPage.titleRegistrationForm(),"Registration Form");
+        Assert.assertEquals(webTablesPage.titleRegistrationForm(), "Registration Form");
         webTablesPage.enterFirstName("Evgeniy");
         webTablesPage.enterLastName("Burdukov");
         webTablesPage.enterEmail("evgeniyburdukov@mail.com");
@@ -24,7 +24,7 @@ public class WebTablesTest extends BaseTests {
         webTablesPage.enterDepartment("Project Manager");
         webTablesPage.clickSubmit();
         waitTime();
-        Allure.addAttachment("Screenshot from grid - chrome", new ByteArrayInputStream(((TakesScreenshot) driver)
+        Allure.addAttachment("Web Tables Test", new ByteArrayInputStream(((TakesScreenshot) driver)
                 .getScreenshotAs(OutputType.BYTES)));
     }
 }

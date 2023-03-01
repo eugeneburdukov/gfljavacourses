@@ -23,7 +23,8 @@ public class ButtonsTest extends BaseTests {
         Assert.assertEquals(buttonsPage.responseClickMe(), "You have done a dynamic click");
         Assert.assertEquals(buttonsPage.doubleClickResponse(), "You have done a double click");
         Assert.assertEquals(buttonsPage.getRightClickResponse(), "You have done a right click");
-        Allure.addAttachment("Screenshot from grid - chrome", new ByteArrayInputStream(((TakesScreenshot) driver)
+        waitTime();
+        Allure.addAttachment("Buttons test", new ByteArrayInputStream(((TakesScreenshot) driver)
                 .getScreenshotAs(OutputType.BYTES)));
     }
 }
